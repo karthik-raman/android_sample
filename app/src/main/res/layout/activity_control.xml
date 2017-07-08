@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.nithinkumarant.androidblegatt.ControlActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textDeviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textDeviceAddress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="----"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <ExpandableListView
+        android:id="@+id/gatt_services_list"
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:layout_weight="0.74" />
+
+    <TextView
+        android:id="@+id/textViewFan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fan Speed (0 to 65535) "
+        android:visibility="invisible" />
+
+    <SeekBar
+        android:id="@+id/seekBarFan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+</LinearLayout>
